@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  android:orientation="vertical"
+    tools:context="nineinfosys.grossdomesticproduct.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="Personal Consumption:"
+            android:layout_width="224dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewPersonalConsumption"
+            android:textSize="18dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="  "
+            android:ems="10"
+            android:id="@+id/editTextPersonalConsumption" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="Gross Investment:"
+            android:layout_width="224dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewGrossInvestment"
+            android:textSize="18dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="  "
+            android:ems="10"
+            android:id="@+id/editTextGrossInvestment" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="Government Consumption:"
+            android:layout_width="226dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewGovernmentConsumption"
+            android:textSize="18dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="  "
+            android:ems="10"
+            android:id="@+id/editTextGovernmentConsumption" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="Export:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewExport"
+            android:textSize="18dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="  "
+            android:ems="10"
+            android:id="@+id/editTextExport" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="Import:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewImport"
+            android:textSize="18dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="  "
+            android:ems="10"
+            android:id="@+id/editTextImport" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+
+        <Button
+            android:text="Calculate"
+            android:layout_marginLeft="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonCalculate"
+            android:layout_weight="0.21" />
+
+        <Button
+            android:text="Clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonClear"
+            android:layout_marginLeft="100dp"
+            android:layout_weight="0.25" />
+    </LinearLayout>
+
+    <TextView
+        android:text=""
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="20dp"
+        android:layout_width="360dp"
+        android:layout_marginTop="50dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewResult" />
+
+
+</LinearLayout>
